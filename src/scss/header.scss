@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  &-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    &__logo {
+      width: 150px;
+    }
+    &__menu {
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
+    }
+    &__phone {
+      font-size: 18px;
+      margin-left: auto;
+    }
+    &__links {
+      text-decoration: none;
+      font-size: 18px;
+      color: #616161;
+      &:hover{
+        color: #fb973b;
+        transition: 0.5s;
+      }
+      &:not(:last-of-type) {
+        padding-right: 73px;
+      }
+    }
+  }
+  &-main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    .header-text {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      width: 55%;
+      &__headline {
+        width: 660px;
+        margin-top: 80px;
+        margin-bottom: 0;
+      }
+      &__subheading {
+        width: 330px;
+        margin-top: 17px;
+      }
+    }
+    .header-form {
+      display: flex;
+      width: 50%;
+      margin-top: 11px;
+      &__input {
+        width: 188px;
+        height: 50px;
+        font-size: 16px;
+        text-align: center;
+      }
+      &__button {
+        width: 195px;
+        height: 56px;
+        background: #fb973b;
+        color: white;
+        font-size: 18px;
+        font-family: Miriad Pro;
+        padding-right: 12px;
+        &:hover{
+          background: orangered;
+          transition: 0.5s;
+        }
+      }
+    }
+    &__image {
+      position: absolute;
+      left: 546px;
+      top: 23px;
+    }
+  }
+}
