@@ -67,6 +67,9 @@
       }
       &:not(:last-of-type) {
         padding-right: 73px;
+        @media (max-width: 1150px){
+          padding-right: 0;
+        }
       }
       @media (max-width: 1150px) {
         width: 90%;
