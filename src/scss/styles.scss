@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  background-image: url(/images/фон2.png);
+  background-image: url(/images/фон.png);
   background-position: center;
   background-position-y: -18px;
 }
@@ -18,16 +18,42 @@ body {
   span {
     background-image: linear-gradient(transparent 85%, #fb973b 15%);
     background-position: 0 -15px;
+    @media (max-width: 650px) {
+      background-position: 0 -10px;
+    }
+    @media (max-width: 380px) {
+      background-position: 0 -5px;
+    }
+  }
+  @media (max-width: 800px) {
+    font-size: 45px;
+  }
+  @media (max-width: 650px) {
+    font-size: 32px;
+  }
+  @media (max-width: 380px) {
+    font-size: 26px;
   }
 }
 .subtitle {
   font-size: 24px;
   color: black;
   line-height: 36px;
-  span {
-    color: #fb973b;
-    font-weight: bold;
+  @media (max-width: 800px) {
+    font-size: 20px;
   }
+  @media (max-width: 650px) {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  @media (max-width: 380px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+.selected-text {
+  color: #fb973b;
+  font-weight: bold;
 }
 @import "header";
 @import "about";
